@@ -102,3 +102,6 @@ ENV/
 
 # reports
 reports/
+
+# ide
+.idea
