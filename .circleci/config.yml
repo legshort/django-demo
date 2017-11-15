@@ -44,7 +44,8 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python django_demo/manage.py test
+            python django_demo/manage.py jenkins --enable-coverage
+            codecov
 
       - store_artifacts:
           path: test-reports
